@@ -2,10 +2,7 @@ from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from msrest.authentication import CognitiveServicesCredentials
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 import time
-
-endpoint = "ENTER ENDPOINT HERE"
-key = "ENTER KEY HERE"
-
+from credentials import key, endpoint
 credentials = CognitiveServicesCredentials(key)
 
 client = ComputerVisionClient(
